@@ -1,0 +1,30 @@
+Al no existir el tipo de dato Boolean se sigue la siguiente convencion:
+0 es igual a False
+1 es igual a True
+
+Suponga que i=1, j=2, k=3, m=2. Qué imprime cada uno de los siguientes enunciados?
+
+printf("%d", i == 1); --> Como i=1 tenemos que 1==1 es una afirmacion verdadera. Imprime: 1
+
+printf("%d", j == 3); --> Como j=2 tenemos que 2 == 3 es una afirmacion falsa. Imprime: 0
+
+printf("%d", i>=1 && j>4); --> Como j=2 tenemos que 2>4 es una afirmacion falsa. Imprime: 0
+
+printf("%d", m<=99 && k<m); --> Como k=3 y m=2 tenemos que 3<2 es una afirmacion falsa.Imprime: 0
+
+printf("%d", j>=i || k==m); --> Como j=2 e i=1 tenemos que 2>=1 es una afirmacion verdadera. Imprime: 1
+
+printf("%d", k+m < j || 3-j >= k ); --> Como k=3, m=2 y j=2 tenemos que 3+2<2 es una afirmacion falsa, ademas, como j=2 y k=3 tenemos que 3-2>=3 que tambien es falsa. Imprime: 0
+
+
+Suponga que i=1, j=2, k=3, m=2. Qué imprime cada uno de los siguientes enunciados?
+
+printf("%d", ! m); --> Como m=2 tenemos que es un numero distinto de 0 (eventualmente simboliza verdadero), al ser negado... Imprime: 0
+
+printf("%d", ! (j-m)); --> Como j=m tenemos que j-m = 0 (simboliza falso), al ser negado... Imprime: 1
+
+printf("%d", ! (k<m)); --> Como k=3 y m=2 tenemos que 3<2 es una afirmacion falsa, que al ser negada es verdadera. Imprime: 1
+
+printf("%d", ! (j > k)); --> Como j=2 y k=3 tenemos que 2>3 es una afirmacion falsa, que al ser negada es verdadera. Imprime: 1
+
+printf("%d", ! (j - k)); --> Como j=2 y k=3 tenemos que 2-3=-1 (simboliza verdadero), al ser negada... Imprime: 0

@@ -1,0 +1,24 @@
+El siguiente código busca informar si el número leído es par o impar. Indique los errores que encuentre
+
+scanf("%d", nro);
+switch nro % 2
+{
+    case 0 : printf("Es par\n");
+    case 1 : printf("Es impar\n");
+}
+
+Errores:
+1. A la hora de leer un dato por pantalla es necesario utilizar como segundo argumento, antes de la variables el Ampersand (&).
+2. Para la condicion del switch es necesaria que la misma se encuentre entre parentesis.
+3. En caso de que el numero entre el primer caso (numero par), luego de imprimir que el mismo es impar, al no encontrarse la sentencia break tambien pasara al siguiente caso, e imprimira que es impar. No es un error en compilacion sino un error del programador, que no logro el cometido pedido.
+
+Solucion:
+
+scanf("%d", &nro);
+switch(nro % 2)
+{
+    case 0: printf("Es par\n"); 
+            break;
+    case 1: printf("Es impar\n"); 
+            break;
+}

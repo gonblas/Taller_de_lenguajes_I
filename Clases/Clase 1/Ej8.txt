@@ -1,0 +1,13 @@
+Analice el siguiente segmento de código e indique los errores que encuentre
+
+For(k = 1; k < 10; k++) ;
+    printf("%3d" , k);
+
+Errores:
+1. La estructura de control "for" esta mal escrita, su primera letra esta en mayuscula.
+2. Al final de la estructura "for" no va un parentesis, en caso de ser requerido (mas de una linea en el bloque de codigo dentro del "for") se pondran un par de llaves (una de apertura y otra de cierre).
+3. (Posible error). Dependiendo del contexto puede que la variable k no este declarada.
+
+Solucion:
+for(int k = 1; k < 10; k++)
+    printf("%3d", k);
