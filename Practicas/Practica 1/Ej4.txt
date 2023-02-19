@@ -1,0 +1,49 @@
+4. Investigue los operadores del lenguaje C. Enumérelos y descríbalos según las siguientes categorías: aritméticos, relacionales, lógicos, de bits, asignación y condicional.
+
+RTA:
+Los operadores en C son simbolos que realizan operaciones entre 1 o mas operandos y que resultado de ello producen un resultado. 
+Operadores del lenguaje C:
+
+-Aritmeticos: Utilizados para operaciones aritmeticas (matematicas).
+1. Suma (+): Realiza la suma entre dos numeros                          --> num1 + num2
+2. Resta (-): Realiza la resta entre dos numeros                        --> num1 - num2
+3. Multiplicacion (*): Realiza la multiplicacion entre dos numeros      --> num1 * num2
+4. Division (/): Realiza la division entre dos numeros                  --> num1 / num2
+5. Modulo (/): Realiza el modulo de la division entre dos numeros       --> num1 % num2
+
+-Relacionales: Utilizados para comparar dos valores.
+1. Igual (==):Devuelve verdadero o falso si los operandos son iguales o no 
+--> x == y
+2. Desigual (!=):Devuelve True o False si los operandos son desiguales o no 
+--> x != y
+3. Mayor que (>):Devuelve True o False  si el primer operando es mayor que el segundo o no    
+--> x > y
+4. Menor que (<):Devuelve True o False  si el primer operando es menor que el segundo o no    
+--> x < y
+5. Mayor o igual que (>=):Devuelve True o False si el primer operando es mayor o igual que el segundo o no  --> x >= y
+6. Menor o igual que (<=):Devuelve True o False si el primer operando es menor o igual que el segundo o no    --> x <= y
+(Cabe recalcar que el tipo de dato Boolean no existe en C, pero es una condicion funciona como tal)
+
+-Logicos:
+1. Op. "y" (&&):Devuelve True solo si ambos operandos son verdaderos   --> op1 && op2
+2. Op. "o" (||):Devuelve True si uno de los operandos es verdadero     --> op1 || op2
+3. Op. "no" (!):Devuelve True si el operando es falso                  --> !op1
+
+-Bitwise:
+1. AND (&):Realiza la operacion AND entre dos operandos                     --> op1 & op2
+2. OR (|):Realiza la operacion OR entre dos operandos                       --> op1 | op2
+2. NOT (~):Realiza la operacion NOT entre a un operando (en Ca2)            --> ~op2
+3. XOR (^):Realiza la operacion XOR entre dos operandos                     --> op1 ^ op2
+4.Shift Left (<<):Corre los bits del operando n veces hacia la izquierda    --> op1 << n
+5.Shift Right (>>):Corre los bits del operando n veces hacia la derecha     --> op1 >> n
+ 
+-Asignacion:
+1.Asig. Suma (+=):Realiza la operacion de sumarle n a un operando                       --> op1 += n
+2.Asig. Resta (-=):Realiza la operacion de restarle n a un operando                     --> op1 -= n
+3.Asig. Multiplicacion (*=):Realiza la operacion de multiplicarle n a un operando       --> op1 *= n
+4.Asig. Division (/=):Realiza la operacion de dividir por n a un operando               --> op1 /= n
+5.Asig. Modulo (/=):Realiza la operacion de modulo de la division por n a un operando   --> op1 %= n
+(Todos los resultados son almacenados en el operando)
+
+-Condicional:
+1. Op. Ternario (?):Permite devolver un valor u otro dependiendo de si una condicion es verdadera o falsa. Retorna la primera expresion si la condicion es verdadera  -->condición ? expresión1 : expresión2

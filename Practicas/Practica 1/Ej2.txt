@@ -1,0 +1,46 @@
+2. Investigue los diferentes tipos de datos del lenguaje C y luego responda:
+
+a. ¿Qué ocurre cuando asignamos un char a un int? ¿y al revés? Ejecute el siguiente código
+y analice lo que imprime. ¿Se presenta algún warning al compilar?
+#include <stdio.h>
+int main(){
+    char c = 'a';
+    int x = 64;
+    printf("char c= %c\n", x);
+    printf("int x= %d\n", c);
+    return 0;
+}
+
+RTA: Cuando asignamos un char a un entero, lo que sucede es que el numero que representar al caracter asignado en el codigo ascii es el que se asignara en la variable entera. El proceso inverso sucede cuando asignamos un entero a un char. El codigo imprime:
+char c= @       //pues '@' es representada con el 64 en el codigo ascii
+int x= 97       //pues 'a' es representada con el 97 en el codigo ascii
+
+
+b. ¿Qué diferencia existe entre los tipos float y double? ¿se puede asignar entre si sin
+inconvenientes?
+
+RTA: Ambos tanto el float como el double almacenan numeros reales, la diferencia entre ellos radica en la cantidad de bytes que ocupa cada uno, y en consecuencia, el rango de numeros que pueden ser representados:
+
+Float (Número real de precisión simple) --> Ocupa 4 bytes y puede representar ±1.18 x 10^-38 a ±3.4 x 10^38 numeros.
+
+Bouble (Número real de precisión doble) --> Ocupa 8 bytes y puede representar ±2.23 x 10^-308 a ±1.80 x 10^308 numeros.
+
+
+c. ¿Qué sucede cuando en una operación intervienen operadores diferentes?
+Por ejemplo: x = 2*32+10%2-1;
+
+RTA: Cuando en una operacion aritmetica intervienen diferentes operadores existe un orden matematico en el cual se realiza cada una:
+1- Se calculan los parentesis. Dentro del mismo se sigue el mismo orden con los operadores que se encuentren dentro de los parentesis.
+2- Se calculan las multiplicaciones (*), divisiones(/) y modulos(%). En caso de que hayan mas de dos de estas tres operadores juntos, se calculan de izquierda a derecha.
+3-Se calcula suma o resta.
+Para el ejemplo dado:
+Paso 1: x = 2*32+10%2-1;    //No existen parentesis
+Paso 2: x = 64+0-1;         //Pues 2*32=64 y 10%2=0
+Paso 3: x = 63;             //Pues 64+0-1=63
+
+
+d. Investigue el operador sizeof. ¿Para qué sirve? Luego aplíquelo y verifique el tamaño de
+los distintos tipos de datos en su máquina.
+
+RTA: El operador sizeof en una funcion pre-definida que retorna el tamaño en bytes del dato que le pasemos como parametro. Es muy util para iterar un array ya que sabiendo el tamaño del array y el tamaño de una posicion del array podemos calcular cuan largo en el mismo:
+len = sizeof(array)/sizeof(array[0]);

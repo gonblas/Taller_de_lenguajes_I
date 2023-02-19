@@ -1,0 +1,39 @@
+3. Números naturales y enteros en C:
+
+a. ¿Qué tipos de datos pueden usarse para representar enteros en C?
+
+RTA: Para representar numeros enteros pueden utilizarse: short, unsigned short, int, unsigned int, long int, unsigned long int, long long int y unsigned long long int.
+
+
+b. ¿Qué modificadores pueden utilizarse con estos tipos?
+
+RTA:
+Dato --> Especificadores de formato
+
+short                   --> "%hd"
+unsigned short          --> "%hu"
+int                     --> "%d"
+unsigned int            --> "%u"
+long int                --> "%ld"
+unsigned long int       --> "%lu"
+long long int           --> "%lld"
+unsigned long long int  --> "%llu"
+
+
+c. Para cada combinación de tipo y modificadores indique el tamaño en bytes que ocupa, el
+sistema de representación binario y el rango del mismo.
+
+RTA:
+Dato                            --> Bytes -    Representacion Binaria    -              Rango
+
+short ("%hd")                   -->   2   -  16 value bits               - [-32.768, 32.767]
+unsigned short ("%hu")          -->   2   -  1 sign bit | 15 value bits  - [0, 65.535]
+int("%d")                       -->   4   -  32 value bits               - [-2.147.483.648, 2.147.483.647]
+unsigned int ("%u")             -->   4   -  1 sign bit | 31 value bits  - [0, 4.294.967.295]
+long int ("%ld")                -->   4   -  32 value bits               - [-2.147.483.648,2.147.483.647]
+unsigned long int ("%lu")       -->   4   -  1 sign bit | 31 value bits  - [0, 4.294.967.295]
+long long int ("%lld")          -->   8   -  64 value bits               - [-9.2234 * 10^18 a 9.2234 * 10^18]
+unsigned long long int ("%llu") -->   8   -  1 sign bit | 63 value bits  - [0, 18,446,744,073,709,551,615]
+
+
+

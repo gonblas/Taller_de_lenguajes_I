@@ -1,0 +1,77 @@
+8. Identifique y corrija los errores en cada uno de los siguientes códigos (Nota: puede haber más de uno):
+
+a.  int edad;
+    if (edad >= 40);
+        printf("Tiene %d años o más",&40);
+    else
+        printf("Tiene menos de %d años",&40);
+
+Errores:
+1. Al poner &40, estamos imprimiendo la direccion en memoria de un dato (40) que no esta almacenado en ningun lado, por lo tanto es necesario sacar el &.
+2.Luego del if no es posible el uso del ;
+
+Solucion:
+    int edad;
+    if (edad >= 40)
+        printf("Tiene %d años o más",40);
+    else
+        printf("Tiene menos de %d años",40);
+
+
+b.  int total = 0, x = 1;
+    while (x <= 10) {
+    total += x;
+        ++x;
+    }
+    printf("Total = %d",total);
+
+Errores:
+1.Total no esta inicializada con ningun valor, si lo que se quiere hacer es sumar todos los numeros del 1 al 10 debemos inicializarla en 0.
+2. En el printf() el especificador de formato no esta acorde con el dato indicado, el utilizado en este caso es %d pues se trata de un dato entero.
+
+Solucion:
+    int total = 0, x = 1;
+    while (x <= 10) {
+    total += x;
+        ++x;
+    }
+    printf("Total = %d",total);
+
+
+c.
+    int valor;
+    scanf("%d",&valor);
+    switch (valor % 2) {
+        case 0: printf("El valor es par");
+        case 1: printf("El valor es impar");
+    }
+
+Errores:
+1. Al no haber una sentencia break luego del bloque de instrucciones de un case en una estructura de control switch al ser la condicion del case verdadera entrara tanto en esa como en las siguientes. Si bien no es un error de compilacion, el mismo hace que no hayan resultados deseados cuando el numero es par.
+
+Solucion:
+    int valor;
+    scanf("%d",&valor);
+    switch (valor % 2) {
+        case 0: printf("El valor es par"); break;
+        case 1: printf("El valor es impar"); break; //No es necesario pero es una buena practica 
+        //caso de que se agregue un expect no habran problemas
+    }
+
+
+d.  int x, y;
+    scanf("%d",x);
+    scanf("%d",y);
+    printf("x + y = %d ",x+y);
+
+Errores:
+1.Al utilizar el scanf es necesario como segundo parametro ingresar donde queremos que se almacene el dato traido del buffer, por lo tanto debemos ingresar la direccion en memoria donde queremos almacenarlo, para ello debemos anteponer al nombre de la variable el &.
+2.Posible error: No limpiar el buffer.
+
+Solucion:
+    int x, y;
+    scanf("%d",&x);
+    scanf("%d",&y);
+    printf("x + y = %d ",x+y);
+
+

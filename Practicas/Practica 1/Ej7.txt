@@ -1,0 +1,37 @@
+7. El objetivo del siguiente código es leer dos caracteres de teclado e imprimirlos en pantalla. ¿El
+código cumple con su cometido? En caso negativo, corríjalo para que lo haga.
+
+#include <stdio.h>
+int main(){
+    char a, b;
+    printf("Ingrese el primer caracter:\n");
+    scanf("%c", &a);
+    printf("Se leyó el caracter: %c\n", a);
+    printf("Ingrese el segundo caracter:\n");
+    scanf("%c", &b);
+    printf("Se leyó el caracter: %c\n", b);
+    return 0;
+}
+
+Errores:
+1. La solucion esta bien planteada, el error radica en que al ingresar el primer caracter y darle enter, el primer caracter ingresado se almacenara en "a", pero el enter se almacenara en "b". Por lo tanto es necesario leer este enter para que nos deje ingresar un segundo caracter requerido.
+
+Solucion:
+#include <stdio.h>
+int main(){
+    char a, b;
+    printf("Ingrese el primer caracter:\n");
+    scanf("%c", &a);
+    printf("Se leyó el caracter: %c\n", a);
+    gets();
+    printf("Ingrese el segundo caracter:\n");
+    scanf("%c", &b);
+    printf("Se leyó el caracter: %c\n", b);
+    return 0;
+}
+
+Explicacion mas detallada: En el lenguaje C la funcion scanf() trabaja con Buffers(regiones de memoria temporal para almacenar datos que se van a utilizar despues), esto quiere decir, que a la hora de recoger un dato y almacenarlo en una variable, el mismo busca ese dato en un Buffer, si en el mismo ya existe un dato del tipo especificado lo tomara, en caso contario, esperara a que el usuario ingrese el dato por teclado, y al enviar esos datos el mismo lo recoge y lo almacena. Cuando nos piden ingresar el primer caracter y damos Enter para ingresar los datos en el buffer ademas del caracter quedara almacenado ese Enter que nosotros dimos ("\n"). Al ser el buffer una estructura FIFO (First In, First Out) el primer caracter se almacenara en "a" y el segundo ("\n") al ya estar en el buffer se almacenara en b. Incluso si ingresamos mas de un caracter el segundo caracter sera el que se almacene en b.
+Para evitar esto debemos limpiar el buffer.
+
+
+Lo mismo sucede cuando leemos un numero y nos ingresan varios numeros separados por un espacio, o cuando ingresan una cadena mas larga de lo que se puede almacenar en la variable indicada.

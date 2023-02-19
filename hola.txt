@@ -1,1 +1,0 @@
-hacer ejercicio de detectar posicion de una letra.

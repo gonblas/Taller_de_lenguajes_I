@@ -1,0 +1,31 @@
+1. Al compilar un programa en C, el compilador puede notificar errores y avisos (warnings). ¿Qué
+diferencia existe entre ellos? ¿puede un programa compilar con errores? ¿y con warnings?
+Compile los siguientes programas e identifique errores y warnings. Luego, corríjalos para que el código compile correctamente.
+
+RTA: Los errores son mensajes que el compilador genera que da aviso de que el mismo no pudo generar un archivo ejecutable. Algunos errores pueden ser de sintaxis, malas asignaciones,etc. Los warnings tambien son mensajes que genera el compilador, pero a diferencia de los errores, permiten generar un archivo ejecutable, lo que permite correr el programa, de esta manera da un aviso de un posible problema. Un programa con errores no puede compilar, con warnings si.
+
+Compilar los siguientes codigos y detectar errores/warnings:
+a.
+#include <stdio.h>
+int main(){
+    double pi= 3.14;
+    int y= 5
+    printf("pi= %d\n", pi);
+}
+
+Errores: Luego de la asignacion a la variable y es necesario un ;
+Warnings: -----------
+A lo hora de imprimir se utilizo un especificador de formato que no coincide con el tipo definido de la variable. Si bien no es ni un error ni un warning imprime un numero aleatorio.
+
+b.
+#include <stdio.h>
+int main(){
+    int x=10;
+    if (x=5)
+        printf("x = 5\n");
+    return 0;
+}
+
+Errores: ---------
+Warnings:---------
+Si bien no tira ni errores ni warnings, quizas el programa no hace lo que debe hacer. x se inicializa con 10, en el if al haber un solo "=" no compara a x con 5 sino que se lo asigna, como x=5 es distinto de 0 (valor verdadero) entra en el if e imprime.

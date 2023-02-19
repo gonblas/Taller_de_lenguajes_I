@@ -1,0 +1,16 @@
+10. Indique detalladamente la estructura de control for de C. Indique cual es la finalidad de cada
+parte, si es opcional u obligatoria y en que parte del bloque for se ejecuta/evalua cada una.
+
+RTA: Estructura:
+for (inicialización ; condición; acciones_posteriores)
+    {
+        /* code */
+    }
+
+inicializacion: Se inicializa la variable indice que nos ayudara a controlar las veces que se repitira el bloque de codigo dentro de la estructura for. Se puede declarar la variable en el mismo for o se lo pueda hacer antes. Se ejecuta solo al iniciar el for.
+
+condicion: Se estable alli una condicion la cual debemos estar seguros de que no se cumpla en algun momento, generalmente suele estar relacionada con el indice, pero puede que no sea de tal manera.
+
+acciones_posteriores: Se ejecuta al final de cada iteracion. Permite actualizar la variable indice.
+
+Ambas son obligatorias.

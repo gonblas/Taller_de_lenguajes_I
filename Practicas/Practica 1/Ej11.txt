@@ -1,0 +1,83 @@
+11. Indique qué valores de la variable de control i se imprimen para cada uno de las siguientes
+estructuras de control for. Ejecute cada código y analice por qué ocurre cada caso:
+
+a.  for (i = 0; i <= 11; i++)
+        printf("%d\n",i);
+
+RTA: Se imprime:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Pues el indice del for se inicializa en 0 y luego de cada iteracion incrementa en uno su valor, hasta que supera el 12 y la estructura for se termina.
+
+b.  for (i = 0; i <= 11; ++i)
+        printf("%d\n",i);
+
+RTA: Se imprime:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Pues el indice del for se inicializa en 0 y luego de cada iteracion incrementa en uno su valor, hasta que supera el 12 y la estructura for se termina. En un bucle for no se ve reflejado el pre o post incremento de la variable, ya que:
+"++i" incrementa su valor antes de evaluar la siguiente condicion.
+"i++" incrementa su valor luego de la actual condicion.
+
+c.  for (i = 2; i <= 11; i+=2)
+        printf("%d\n",i);
+
+RTA: Imprime:
+2
+4
+6
+8
+10
+Pues el indice se inicializa en 2, y aumenta de dos en dos hasta que vale 12 (condicion falsa).
+
+d.  for (i = 1; i <= 11; i*=2)
+        printf("%d\n",i);
+
+RTA: Se imprime:
+1
+2
+4
+8
+Pues el indice se inicializa en 1, y se multiplica su valor actual por 2 hasta valer 16 (donde la condicion se vuelve falsa y no entra al for).
+
+
+e.  for (i = 11; i >= 1; i-=2)
+        printf("%d\n",i);
+
+RTA: Se imprime:
+11
+9
+7
+5
+3
+1
+Pues el indice se incializa en 11 y se decrementa su valor de dos en dos hasta vaelr -1 (donde la condicion se vuelve falsa y no entra al for)
+
+
+f.  for (i = 11; i > 1; i=+1)
+        printf("%d\n",i);
+
+RTA: Se imprime:
+11
+Pues se imprime el valor con el cual fue inicializado, y en la zona post-ejecucion se le asigna el valor de +1 es decir 1 con el cual la afirmacion es falsa.
+
