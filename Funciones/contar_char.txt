@@ -1,0 +1,11 @@
+//Cuenta la cantidad de veces que aparece un caracter en una cadena.
+
+int contar(char str[], char car);
+
+int contar(char str[], char car){
+    int cant = 0;
+    for (int i = 0; str[i] != '\0'; i++)
+        if(str[i] == car)
+            cant++;
+    return cant;
+}

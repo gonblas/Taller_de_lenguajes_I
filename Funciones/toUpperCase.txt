@@ -1,0 +1,10 @@
+//Pasar cadena a mayusculas
+
+
+#include <ctype.h>
+void toUpperCase(char str[]);
+
+void toUpperCase(char str[]){
+    for (int i = 0; str[i] != '\n'; i++)
+        str[i] = toupper(str[i]);
+}

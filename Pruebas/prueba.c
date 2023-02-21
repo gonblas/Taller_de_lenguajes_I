@@ -1,17 +1,21 @@
+#include <stdio.h>
+
+
+void mayus(char str[]);
+
 int main()
 {
-    int x, y;
-    x = 10;
-    y = 20;
-    printf("x=%d\ty=%d\n",x,y);
-    swap(&x, &y);
-    printf("x=%d\ty=%d\n",x,y);
+    char str[50];
+    printf("Ingrese una cadena de texto: ");
+    fgets(str, 50, stdin);
+    mayus(str);
+    printf("\n%s",str);
+    
     return 0;
 }
-void swap(int *a, int *b)
-{
-    int tmp;
-    tmp = *a; // guarda el valor de a
-    *a = *b; // almacena b en a
-    *b = tmp; // almacena a en b
+
+void mayus(char str[]){
+    #include <ctype.h>
+    for (int i = 0; str[i] != '\n'; i++)
+        str[i] = toupper(str[i]);
 }
