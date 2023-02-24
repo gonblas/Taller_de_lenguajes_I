@@ -21,6 +21,7 @@
     "thread": "c",
     "functional": "c",
     "tuple": "c",
-    "variant": "c"
+    "variant": "c",
+    "cmath": "c"
   }
 }

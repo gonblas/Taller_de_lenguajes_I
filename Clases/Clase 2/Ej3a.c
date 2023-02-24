@@ -1,6 +1,4 @@
-/*Escriba una función en C que dado un número entero retorne un
-unsigned con dicho número representado en binario.
-Ej: Recibe el número 27 y devuelve el número 11011
+/*Escriba una función en C que dado un número entero retorne un unsigned con dicho número representado en binario. Ej: Recibe el número 27 y devuelve el número 11011
 Use la función anterior para imprimir la conversión a binario de los
 múltiplos de 9 menores a 127.
 *Utilice una función iterativa*/
@@ -8,6 +6,7 @@ múltiplos de 9 menores a 127.
 #include <math.h>
 
 unsigned int binario(int n);
+
 int main()
 {
     int n;

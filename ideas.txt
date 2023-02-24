@@ -4,15 +4,9 @@ Crea una función que reciba una cadena y devuelva una cadena que contenga solo 
 
 Crea una función que reciba dos cadenas y determine si son anagramas (es decir, si tienen las mismas letras pero en un orden diferente).
 
-Crea una función que reciba una cadena y determine si es un palíndromo (es decir, si se lee igual de izquierda a derecha que de derecha a izquierda).
-
-Crea una función que reciba un número entero y determine si es un número perfecto (es decir, si es igual a la suma de sus divisores propios).
-
 Crea una función que reciba dos cadenas y determine si la segunda cadena es una subcadena de la primera.
 
 Crea una función que reciba una cadena y devuelva la cantidad de veces que aparece cada letra en la cadena.
-
-Crea una función que reciba un número entero y determine si es un número Armstrong (es decir, si la suma de los dígitos elevados a la potencia del número de dígitos es igual al número).
 
 Crea una función que reciba una cadena y determine si es un pangrama (es decir, si contiene todas las letras del alfabeto).
 
@@ -21,5 +15,3 @@ Crea una función que reciba dos cadenas y devuelva una nueva cadena que conteng
 Crea una función que reciba una cadena y devuelva una nueva cadena con las palabras en orden inverso.
 
 Crea una función que reciba una cadena y determine si es un acrónimo de otra cadena (es decir, si las primeras letras de cada palabra en la cadena forman la palabra deseada).
-
-Crea una función que reciba una cadena y devuelva la cadena codificada en Huffman.
