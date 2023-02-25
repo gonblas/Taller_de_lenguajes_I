@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	{
+		"label": "compilar",
+		"type": "shell",
+		"command": "gcc",
+		"args": [
+			"-o",
+			"a.out",
+			"main.c"
+		],
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		}
+	}
+]
+}

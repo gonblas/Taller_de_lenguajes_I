@@ -1,5 +1,3 @@
-Crea una función que reciba una cadena y devuelva una nueva cadena que contenga solo los caracteres únicos de la cadena original.
-
 Crea una función que reciba una cadena y devuelva una cadena que contenga solo los dígitos numéricos de la cadena original.
 
 Crea una función que reciba dos cadenas y determine si son anagramas (es decir, si tienen las mismas letras pero en un orden diferente).
