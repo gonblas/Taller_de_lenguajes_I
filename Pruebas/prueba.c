@@ -1,21 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
+int main() {
+    int* p;
+    int n = 5;
+    p = (int*)malloc(n * sizeof(int));
 
-void mayus(char str[]);
+    if (p == NULL) {
+        printf("Error: no se pudo asignar memoria.\n");
+        exit(1);
+    }
 
-int main()
-{
-    char str[50];
-    printf("Ingrese una cadena de texto: ");
-    fgets(str, 50, stdin);
-    mayus(str);
-    printf("\n%s",str);
-    
+    for (int i = 0; i < n; i++) {
+        p[i] = i * 2;
+    }
+
+    printf("Los primeros %d números pares son: ", n);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", p[i]);
+    }
+    printf("\n");
+
+    free(p);
     return 0;
-}
-
-void mayus(char str[]){
-    #include <ctype.h>
-    for (int i = 0; str[i] != '\n'; i++)
-        str[i] = toupper(str[i]);
 }
