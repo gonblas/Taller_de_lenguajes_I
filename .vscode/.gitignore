@@ -54,4 +54,7 @@ dkms.conf
 
 *.vscode
 *.md
-!*.*
+
+
+# Ignore el archivo ejecutable sin extensión generado por C
+*
