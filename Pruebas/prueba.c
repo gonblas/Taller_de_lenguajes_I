@@ -8,7 +8,6 @@ int main() {
     time(&now);
     printf("La fecha y hora actual es: %s", ctime(&now));
 
-    
 
     return 0;
 }
