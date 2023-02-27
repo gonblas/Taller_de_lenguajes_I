@@ -1,0 +1,14 @@
+Se agrega un elemento a la pila
+
+#include <stdlib.h>
+
+void push(int element);
+
+void push(int element) {
+
+    Stack* newNode = (Stack*) malloc(sizeof(Stack));
+    newNode->data = element;
+
+    newNode->next = top;
+    top = newNode;
+}

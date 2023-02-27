@@ -1,0 +1,8 @@
+
+typedef struct Node{
+    int data;
+    struct Node* next;
+} Stack;
+
+//Apunta al primer elemento, se utiliza para apuntar al ultimo elemento
+Stack* top = NULL;

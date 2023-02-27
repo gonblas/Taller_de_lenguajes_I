@@ -1,0 +1,9 @@
+//Analiza si pila esta vacia
+
+int isEmpty();
+
+int isEmpty() {
+    if (top == NULL) 
+        return 1;
+    return 0;
+}

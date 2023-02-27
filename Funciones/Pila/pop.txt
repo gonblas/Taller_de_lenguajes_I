@@ -1,0 +1,28 @@
+//Eliminar un elemento de la pila.
+
+#include <stdlib.h>
+
+int pop();
+int isEmpty();
+
+int pop(){
+
+    if (isEmpty()) {
+        printf("Error: La pila esta vacia\n");
+        return -1;
+    }
+
+    int element = top->data;
+    Node* temp = top;
+    top = top->next;
+    free(temp);
+    return element;
+}
+
+//Analiza si la pila esta o no vacia.
+
+int isEmpty() {
+    if (top == NULL) 
+        return 1;
+    return 0;
+}
