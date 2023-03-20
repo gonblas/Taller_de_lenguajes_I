@@ -11,6 +11,8 @@ Nota: para asegurar que un número se encuentre en el rango de 0 a N, puede util
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define random(min, max) (rand() % (max - min + 1) + min)
+
 
 enum notas{E, D, C, B, A};
 
@@ -47,7 +49,7 @@ int preguntas(){
     srand(time(NULL));
     for (size_t i = 1; i <= 4; i++)
     {   
-        printf("Pregunta %d:¿Cuanto es %d + %d?\n",i, num1=rand()%100,num2=rand()%100);
+        printf("Pregunta %d:¿Cuanto es %d + %d?\n",i, num1=random(1,100),num2=random(1, 100));
         printf("RTA: ");
         scanf("%d",&alumno);
         if(alumno == num1 + num2){

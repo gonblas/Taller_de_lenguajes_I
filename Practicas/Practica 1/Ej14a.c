@@ -28,15 +28,15 @@ int main()
 
 int es_primo(int n){
     if(n < 0){
-        return 0; //falso
+        return 0;                       //false
     }
 
     for (int i = 2; (i < n); i++)
     {
         if(n%i == 0)
-            return 0; //falso
+            return 0;                  //false
     }
-    return 1; //verdadero
+    return 1;                          //true
 }
 
 

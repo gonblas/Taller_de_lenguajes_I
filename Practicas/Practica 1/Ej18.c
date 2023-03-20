@@ -5,15 +5,15 @@ srand(), las cuales se encuentran definidas en la biblioteca <stdlib.h>. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define random(min, max) (rand() % (max - min + 1) + min)
 
 
 int main(){
     srand(time(NULL));
-    int N = -10, M = 15;
 
     for (int i = 1; i <= 15; i++)
     {
-        printf("Numero pseudo-aleatorio %d: %-6d\n", i, rand() % (M - N+ 1) + N); //Entre [N,M]
+        printf("Numero pseudo-aleatorio %d: %-6d\n", i, random(5, 10));
         
     }
 

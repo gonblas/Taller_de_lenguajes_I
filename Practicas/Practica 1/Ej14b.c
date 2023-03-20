@@ -4,6 +4,7 @@ b. Escriba un programa que lea números enteros desde teclado hasta que la canti
 números primos leídos sea 5.
 */
 #include <stdio.h>
+#define MAX 5
 
 enum boolean
 {
@@ -16,7 +17,7 @@ int es_primo(int n);
 int main()
 {
     int n, primos = 0;
-    while (primos < 5)
+    while (primos < MAX)
     {
         printf("\nIngrese un numero entero: ");
         scanf("%d", &n);

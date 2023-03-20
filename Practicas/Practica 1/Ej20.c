@@ -4,8 +4,8 @@ escriba un programa que lea un número entero positivo n desde teclado y utiliza
 imprima los primeros n números pares. No utilice variables globales.*/
 #include <stdio.h>
 
-unsigned int damePar(int i);
-unsigned int damePar2();
+unsigned int damePar();
+
 int main()
 {
     int n;
@@ -15,7 +15,7 @@ int main()
     
     for (int i = 0; i < n; i++)
     {
-        printf("%2u\t", damePar2());
+        printf("%2u\t", damePar());
     }
     printf("\n");
     
@@ -23,14 +23,8 @@ int main()
     return 0;
 }
 
-//Opcion 1
-unsigned int damePar(int i)
-{
-    return 2 * i;
-}
 
-//Opcion 2
-unsigned int damePar2()
+unsigned int damePar()
 {
     static unsigned int par = -2;
     return par += 2;
