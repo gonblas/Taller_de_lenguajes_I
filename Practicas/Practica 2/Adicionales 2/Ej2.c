@@ -54,7 +54,7 @@ void opcion4(int datos[]){
     }
 }
 
-//.
+//Pretende dividir cada posicion de un array en 2. No lo logra ya que termina accediendo a posiciones de memoria que no estan asignadas al vector.
 void opcion5(int datos[]){
     int i;
     for (i=0; i<CANT_DATOS; i++, datos--){
@@ -62,7 +62,7 @@ void opcion5(int datos[]){
     }
 }
 
-//.
+//Pretende dividir cada posicion de un array en 2. No lo logra ya que termina accediendo a posiciones de memoria que no estan asignadas al vector.
 void opcion6(int *datos){
     int i;
     for (i=0; i<CANT_DATOS; i++){
