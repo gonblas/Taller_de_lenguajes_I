@@ -22,6 +22,7 @@
     "functional": "c",
     "tuple": "c",
     "variant": "c",
-    "cmath": "c"
+    "cmath": "c",
+    "random": "c"
   }
 }
