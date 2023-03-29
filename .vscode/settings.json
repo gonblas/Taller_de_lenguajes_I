@@ -23,6 +23,9 @@
     "tuple": "c",
     "variant": "c",
     "cmath": "c",
-    "random": "c"
+    "random": "c",
+    "chrono": "c",
+    "limits": "c",
+    "algorithm": "c"
   }
 }

@@ -1,2 +1,0 @@
-probar un vector de punteros void y luego asignarles distintos valores para simular un araylist
-

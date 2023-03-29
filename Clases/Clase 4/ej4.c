@@ -3,11 +3,11 @@
 #include <time.h>
 
 
-#define ROW 5
-#define COLUMN 3
+#define ROW 3
+#define COLUMN 2
 #define random(min, max) (rand() % (max - min + 1) + min)
 
-void ordenar_columnas(int*, int row, int col);
+void ordenar_columnas(int row, int col, int (*M)[][col]);
 void sort(int array[], int len);
 
 
@@ -19,7 +19,8 @@ int main(){
         for (int j = 0; j < COLUMN; j++)
             M[i][j] = random(1, 100);
 
-    ordenar_columnas(M, ROW, COLUMN);
+    
+    ordenar_columnas(ROW, COLUMN, M);
 
     for (int i = 0; i < ROW; i++){
         for (int j = 0; j < COLUMN; j++)
@@ -30,23 +31,23 @@ int main(){
     return 0;
 }
 
-void ordenar_columnas(int* M, int row, int col){
+void ordenar_columnas(int row, int col, int (*M)[][col]){
     int i, j;
     for (j = 0; j < col; j++) {
-        int* column = M + j*col;
+        int* column = M + j*col;   //Declaro un puntero al primer elemento de la columna
         sort(column, row);
     }
 }
 
 void sort(int array[], int len){
     int i, key, j;
-    for (i = 1; i < len; i++) {                     
+    for (i = 1; i < len*len; i+=len) {                     
         key = array[i];                             
-        j = i-1;                                    
+        j = i-len;                                    
         while (j >= 0 && array[j] > key) {
-            array[j+1] = array[j];
-            j--;
+            array[j+=len] = array[j];
+            j-=len;
         }
-        array[j+1] = key;
+        array[j+=len] = key;
     }
 }
