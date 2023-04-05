@@ -1,0 +1,20 @@
+
+Caso 1:
+struct persona {  
+    char nombre[50];
+    long int DNI;
+} unaPersona;
+typedef struct persona persona_t;
+
+
+Caso 2:
+typedef struct persona {
+    char nombre[50];
+    long int DNI;
+} persona_t;
+
+¿En qué se diferencian ambos bloques? ¿Qué define cada uno?
+
+RTA: En el primer caso se declara una estructura persona y se crea una variable llamada unaPersona que es del tipo struct persona y luego, a traves del typedef crea un alias para el dato struct persona.
+En el segundo caso se declara una estructura persona y a traves del typedef se crea un alias del dato struct persona llamado persona_t;
+La diferencia radica en que en el primer caso se crea una variable a partir de la estructura.

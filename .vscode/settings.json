@@ -26,6 +26,7 @@
     "random": "c",
     "chrono": "c",
     "limits": "c",
-    "algorithm": "c"
+    "algorithm": "c",
+    "cstdlib": "c"
   }
 }
