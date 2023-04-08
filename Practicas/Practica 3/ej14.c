@@ -5,6 +5,7 @@
 #define CANT_CARTAS 50
 #define CANT_CARTAS_PALO 12
 #define random(min, max) (rand() % (max - min + 1) + min)
+#define meterPalo(j) ((j == espada) ? "Espada" : (j == basto) ? "Basto": (j == copa) ? "Copa": "Oro")
 
 enum palos{espada = 0, basto, copa, oro};
 
@@ -44,7 +45,7 @@ void inicializar(Carta mazo[], int palos, int cartas_palos){
         for (int k = 0; k < cartas_palos; k++, i++)
         {
             mazo[i].num = k+1;
-            strcpy(mazo[i].palo, (j == espada) ? "Espada" : (j == basto) ? "Basto": (j == copa) ? "Copa": "Oro");
+            strcpy(mazo[i].palo, meterPalo(j));
         }
     }
     for (int i = 48; i < 50; i++)
@@ -84,7 +85,7 @@ void print_mazo(const Carta mazo[], int len){
 
 void print_carta(Carta c){
     if(strcmp(c.palo, "Comodin"))
-        printf("Palo: %s Numero: %d\n", c.palo, c.num);
+        printf("%s %d\n", c.palo, c.num);
     else
         printf("Comodin\n");
 }

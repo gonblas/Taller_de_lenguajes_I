@@ -1,0 +1,19 @@
+typedef enum { IZQUIERDA, CENTRO_H, DERECHA } AlineacionHorizontal;
+
+RTA: La declaracion es correcta. IZQUIERDA toma el valor 0 y sus elementos a la derecha los siguientes.
+
+typedef enum { ARRIBA=1, CENTRO_V, ABAJO } AlineacionVertical;
+
+RTA: La declaracion es correcta. ARRIBA toma el valor 1 y sus elementos a la derecha los siguientes.
+
+typedef enum { DOS=2, CERO=0, UNO, MENOS_UNO=-1, OTRO } Numeros;
+
+RTA: La declaracion es correcta. Los elementos que tienen asignado un valor toman tal valor y los que no estan asignados toman los valor siguientes a los asignados, es decir, UNO toma el 1 (pues es el que le sigue al 0) y OTRO toma 0 (pues es el que le sigue al -1).
+
+typedef enum { LET_A = "A", LET_B, LET_Z = "Z" } Letras;
+
+RTA: La declaracion es incorrecta. A la hora de utilizar caracteres es necesario el uso de comillas simples.
+
+typedef enum { LETRA_A = 'A', LETRA_B, LETRA_Z = 'Z' } Letras2;
+
+RTA: La declaracion es correcta. Los elementos asignados toman sus respectivos valores y LETRA_B toma el 'B' pues es el que le sigue al 'A' en el codigo ascii.

@@ -9,8 +9,7 @@
    ***   fila 7
     *    fila 8
 */
-/*Logica: Recorremos el dibujo en forma de matriz desde 0 a 8 en filas y columnas. El asterisco del medio siempre se imprime,
-por lo tanto es necesario pintar o no lo de los costados, ademas hay que evaluar si hacemos el patron de la parte de arriba o el de la parte de abajo
+/*Logica: Recorremos el dibujo en forma de matriz desde 0 a 8 en filas y columnas. El asterisco del medio siempre se imprime, por lo tanto es necesario pintar o no lo de los costados, ademas hay que evaluar si hacemos el patron de la parte de arriba o el de la parte de abajo
 Datos: altura 5(medio patron de 0 a 4), ancho total 9 (al trabajarlo de 0 a 8 debe valer 8), la mitad esta dada por el ancho*/
 
 
