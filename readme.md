@@ -2,7 +2,7 @@
 La asignatura tiene como objetivo Profundizar los conocimientos obtenidos por el alumno en los primeros cursos
 vinculados con Algoritmos y Programación, permitiéndole desarrollar un estudio teórico-práctico de algún lenguaje de programación procedural (el lenguaje puede variar con los cambios tecnológicos, en este caso C), poniendo énfasis en el análisis formal de las características del lenguaje y su comparación con los que el alumno conociera a ese momento (típicamente Pascal).
 
->Este repositorio contiene los ejercicios resueltos de las practicas de la materia.
+>***Este repositorio contiene los ejercicios resueltos de las practicas de la materia.***
 ___
 
 ## ***Practicas***
