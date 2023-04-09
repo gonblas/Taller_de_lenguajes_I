@@ -6,7 +6,7 @@ vinculados con Algoritmos y Programación, permitiéndole desarrollar un estudio
 __
 ## ***Practicas***
 * [Practica 1]((/Practicas/Practica1) "Practica 1"): Tipos de datos simples y estructuras de control. Funciones - Identificadores
-* [Practica 2]((/Practicas/Practica2) "Practica 2"): Arreglos - Punteros - Strings
+* [Practica 2]((/Pratica2) "Practica 2"): Arreglos - Punteros - Strings
 * [Practica 3]((/Practicas/Practica3) "Practica 3"): Tipos de Datos Compuestos – Estructuras, Uniones, Enumerativos y Campos de Bits
 ___
 
