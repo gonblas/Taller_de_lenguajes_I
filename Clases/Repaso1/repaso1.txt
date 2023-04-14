@@ -1,0 +1,178 @@
+#Caso 1
+float i;
+for (i = 1.28; i < 16; i*=4)
+    printf("%.1f ", i);
+
+RTA: El programa imprime: 1.3 5.1
+La primera vez entra al for pues 1.28 < 16, e imprime 1.3 ya que al hacer %.1f se debe representar al float con un unico decimal (y el mas cercano a .28 es .3).
+La segunda vez entra al for pues 1.28*4 = 5.12 < 16, e imprime 5.1 ya que es el valor mas cercano con un decimal a 5.12
+
+
+#Caso 2
+int i, a=0;
+    for (i = 0 ; i==100 ; i++)
+        a += 3;
+    printf("el valor de a es %d ",a);
+
+RTA: b. El programa imprime: el valor de a es 0
+Pues la condicion del for es i==100, donde para la primer entrada tenemos i=0, entonces 0==100 (no se cumple la condicion), por lo que no ejecuta nunca las instruccion dentro del bloque del for y entonces no se modifica el valor con el que fue inicializada la variable a.
+
+
+#Caso 3
+int i;
+for (i = 5; i > 0; i-=2)
+    printf("%d ", !(i % 3));
+
+RTA: El programa imprime: 0 1 0
+Pues la primera entrada es i=5 que cumple la condicion (5 > 0) y tenemos que !(i % 3) = !(5 % 3) = !2 = 0.
+La segunda entrada es i=3 (resta dos al anterior i) que cumple la condicion (3 > 0) y tenemos que !(i % 3) = !(3 % 3) = !0 = 1.
+La tercera entrada es i=1 que cumple la condicion (1 > 0) y tenemos que !(i % 3) = !(1 % 3) = !1 = 0.
+La cuarta vez ya no entra pues i=-1 y no cumple la condicion (-1 > 0).
+
+
+#Caso 4
+int i;
+for (i = 5; i > 0; i=-2)
+    printf("%d ", !(i % 3));
+
+RTA: El programa imprime: 0
+Pues la primera entrada es i=5 que cumple la condicion (5 > 0) y tenemos que !(i % 3) = !(5 % 3) = !2 = 0.
+La segunda vez ya no entra pues i=-1 y no cumple la condicion (-2 > 0).
+
+
+#Caso 5
+int i;
+for (i = 1; i < 4; i++){
+    if (i==2)
+        continue;
+    printf("%d ", i);
+}
+
+RTA: El programa imprime: 1 3
+Pues la primera entrada es i=1 que satisface la condicion (1 < 4) y como no cumple la condicion del if(1==2) imprime el valor de i.
+La segunda entrada es i=2 que satisface la condicion (2 < 4) y como cumple la condicion del if(2==2) no imprime nada.
+La tercera entrada es i=3 que satisface la condicion (3 < 4) y como no cumple la condicion del if(3==2) imprime su valor de i.
+La cuarta vez ya no entra pues i = 4 y no cumple la condicion del for (4 < 4).
+
+
+#Caso 6
+int i, a;
+for (i = 9; i; i/=3) {
+    a = i-3 ? ++i : i++;
+    printf("%d ", a);
+}
+
+RTA: El programa imprime: 10 3 2
+La primera vez entra con 9 que cumple la condicion (9, como es distinto de 0 se toma como verdadero), en a se asigna el valor de la condicion verdadera (++i = 10) ya que 9-3=6 (valor distinto de 0 se toma como verdadero) y luego se imprime a (10).
+La segunda vez entra con i/=3 -> i = 10/=3 -> i = 3 (porque se realiza la division entera), el 3 cumple la condicion del for entonces entra, y se asigna en a el valor de la condicion falsa (i++ = 3) ya que 3-3=0 (se toma como falso) y luego se imprime a (3), i queda con 4.
+La tercera vez entra con 1 ya que i/=3 -> i = 4/3 -> i = 1 (porque se realiza la division entera), el 1 cumple la condicion del for entonces entra, y se asigna en a el valor de la condicion verdadera (++i = 2) ya que 3-1=-2 (se toma como verdadero) y luego se imprime a (2), i queda con 2.
+La cuarta vez ya no entra ya que i/=3 -> i = 2/3 -> i = 0 (poque se realiza la division entera), el 0 no cumple la condicion del for.
+
+#Caso 7
+int i;
+for (i=0 ; i<3 ; ++i) {
+    static int s = 4;
+    if (--s % 3)
+        printf("s = %d\n", s--);
+}
+
+RTA: El programa imprime: s = 2
+Al for se entra 3 veces:
+La primera vez i=0: Se declara e inicializa la variable s con 4 la condicion del if no se cumple ya que (--s % 3) -> (3 % 3) -> (0) se toma como falso, por lo tanto no imprime. Al declararse s de forma estatica no se vuelve a inicializar el valor de s. s queda con 3.
+La segunda vez i=1: La condicion del if se cumple ya que (--s % 3) -> (2 % 3) -> (2) se toma como verdadero, por lo tanto imprime "s = 2" y se decrementa luego el valor de s, que queda con 1.
+La tercera vez i=2: La condicion del if no se cumple ya que (--s % 3) -> (0 % 3) -> (0) se toma como falso, por lo tanto no imprime.
+Con i=3 no se cumple la condicion del for.
+
+
+#Caso 8
+int a=5, b=6;
+printf("a & b = %d", a & b);
+
+RTA: El programa imprime: 4
+Para justificar realizo la operacion logica AND entre a=5 y b=6
+a = 5d = 00000101b
+b = 6d = 00000110b
+a & b  = 00000100b = 4d
+
+#Caso 9
+int c=2, d=7;
+printf("c && d = %d", c && d);
+
+RTA: El programa imprime: 1
+Lo que se imprime es el resultado de hacer c && d = 2 && 7 -> 1. Esto se debe a que cualquier valor distinto de 0 es tomado como verdadero (que en C se representa con el 1).
+
+
+#Caso 10
+enum {UNO,DOS,TRES = 0,CUATRO} p;
+int suma = 0, V[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+for (p=UNO; p<CUATRO; p++)
+    suma = suma + V[p];
+printf("suma = %d", suma);
+
+RTA: El programa imprime: suma = 1
+Pues entra en el for una unica vez y con el valor p=UNO=0 y le suma a la variable suma el valor de V[p]=V[UNO]=V[0]=1.
+
+#Caso 11
+enum {UNO,DOS,TRES,CUATRO} p;
+int suma = 0, V[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+for (p=UNO; p<CUATRO; p++)
+    suma = suma + V[p];
+printf("suma = %d", suma);
+
+RTA: El programa imprime: suma = 6
+Pues entra en el for una 3 veces con p=0, p=1 y p=2, y le suma a la variable suma el valor de suma = V[0] + V[1] + V[2] = 6.
+
+
+#Escriba cuatro instrucciones diferentes de C que sumen 1 a la variable entera x.
+RTA:
+    int x;
+    x++;
+    ++x;
+    x += 1;
+    x = x + 1;
+
+#Corrija el error
+float y;
+for(y = .1; y != 1.0; y += .1)
+    printf(" %f /n", y);
+
+RTA: El problema con este código es que el valor 0.1 no se puede representar exactamente en binario con una cantidad finita de bits. Por lo tanto, la suma de 0.1 a y en cada iteración del bucle puede producir un valor ligeramente diferente al valor esperado. Debido a esto, el valor de y nunca será exactamente igual a 1.0, aunque se acerque mucho.
+
+
+
+#Indique la opción verdadera
+RTA: d. Un programa con warnings puede ejecutarse pero podrian aparecer resultados inesperados.
+
+#Para cada inciso indique si es verdadero (V) o falso (F):
+
+1. La siguiente instrucción no compila: printf("%d\n", !4);
+RTA: Falso, si compila e imprime 0 (pues !4 = 0).
+
+2. Los operadores aritméticos *, /, %, + y – tienen el mismo nivel de precedencia.
+RTA: Falso, los operadores + y - tienen menor orden de precedencia.
+
+3. El operador módulo (%) puede utilizarse sólo con operandos enteros.
+RTA: Verdadero, si tomamos al char como un entero entonces solo se puede realizar con numeros enteros.
+
+4. No es posible asignar ningún valor entero a una variable de tipo puntero.
+RTA: Falso, es posible asignarle el valor 0.
+
+5. No es posible comparar dos variables estructuras aunque sean del mismo tipo.
+RTA: Verdadero, no es posible hacerlo.
+
+6. Un puntero void puede asignarse o recibir valor de cualquier tipo de puntero.
+RTA: Verdadero, esas son las principales ventajas de un puntero void.
+
+7. Si una función recibe como parámetro int * const Ptr no podrá modificar lo apuntado por Ptr.
+RTA: Falso, no podra modificar el puntero pero si lo apuntado.
+
+8. Si se imprime una variable char (toma valores entre -128 y 127) inmediatamente después de asignarle el valor 128 se visualizará el valor -128.
+RTA: Verdadero, se produce un desbordamiento (overflow).
+
+9. Un puntero void puede asignarse a cualquier tipo de puntero.
+RTA: Verdadero.
+
+
+
+
+
