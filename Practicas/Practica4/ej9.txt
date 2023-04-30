@@ -1,0 +1,61 @@
+Código 1:
+#include <stdio.h>
+#include <stdlib.h>
+#define N 50
+int main() {
+ int arreglo1[N];
+ return 0;
+}
+
+Código 2:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+ int n;
+ scanf("%d",&n);
+ /* el usuario ingresa 50 */
+ int arreglo3[n];
+ return 0;
+}
+
+Código 3:
+#include <stdio.h>
+#include <stdlib.h>
+#define N 50
+int main() {
+ int * arreglo2 = (int *) malloc (N*sizeof(int));
+ return 0;
+}
+
+a.
+Código 1: Arreglo estatico.
+Código 2: De longitud variable.
+Código 3: Dinamico.
+
+b.
+Código 1: Compilacion.
+Código 2: Ejecucion.
+Código 3: Ejecucion.
+
+c.
+Código 1: 50.
+Código 2: 50 (Lo que el usuario ingreso).
+Código 3: 50.
+
+d. Los arreglos dinamicos son los unicos que pueden utilizar realloc().
+Código 1: No es posible.
+Código 2: No es posible.
+Código 3: Si es posible, con la funcion realloc().
+
+d. Los arreglos dinamicos son los unicos que pueden utilizar free().
+Código 1: No es posible.
+Código 2: No es posible.
+Código 3: Si es posible, con la funcion free().
+
+f. Tanto los arreglos estaticos como de longitud variable no pueden modificar a donde apunta el vector.
+Código 1: No.
+Código 2: No.
+Código 3: Si.
+
+g.El código 2 no compila de acuerdo a ANSI C90 pues crea un arreglo de longitud variable.

@@ -14,7 +14,7 @@ int main()
     gets();
     printf("Ingrese caracter a imprimir: ");
     scanf("%c",&car);
-    triangulo_invertido2(n, car);
+    triangulo_invertido(n, car);
     return 0;
 }
 

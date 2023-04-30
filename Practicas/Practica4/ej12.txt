@@ -1,0 +1,5 @@
+a. Con la variable m es posible modelar arreglos de una o mas dimensiones.
+
+b. Es posible utilizar a m como si fuera una matriz, para acceder a un elemento en la posicion [i,j] debemos seguir la siguiente sintaxis: m[i * y + j] siendo "y" la cantidad de columnas.
+
+c. 
