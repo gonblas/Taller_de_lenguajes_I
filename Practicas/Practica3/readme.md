@@ -1,6 +1,4 @@
-# ***Practica 3***: 
-## *Tipos de Datos Compuestos – Estructuras, Uniones, Enumerativos y Campos de Bits*
-___
+# ***Practica 3***: *Tipos de Datos Compuestos – Estructuras, Uniones, Enumerativos y Campos de Bits*
 
 ## ***Objetivos de la practica:***
 Comprender el uso de las estructuras, uniones y enumerativos. Entender el manejo de campos de bits como metodo de ahorro de memoria.

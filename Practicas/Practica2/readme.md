@@ -1,6 +1,4 @@
-# ***Practica 2***: 
-## *Arreglos - Punteros - Strings*
-___
+# ***Practica 2***: *Arreglos - Punteros - Strings*
 
 ## ***Objetivos de la practica:***
 Entender el funcionamiento de los arreglos estaticos, los arreglos estaticos de caracteres (Strings) y punteros.

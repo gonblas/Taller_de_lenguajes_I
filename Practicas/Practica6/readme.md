@@ -1,6 +1,4 @@
-# ***Practica 5***: 
-## *Argumentos al main – Preprocesador – Bibliotecas*
-___
+# ***Practica 5***: *Argumentos al main – Preprocesador – Bibliotecas*
 
 ## ***Objetivos de la practica:***
 Comprender el manejo de las bibliotecas, argumentos del main y preprocesador.

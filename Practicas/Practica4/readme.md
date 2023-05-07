@@ -1,6 +1,4 @@
-# ***Practica 4***: 
-## *Estructuras de datos dinámicas*
-___
+# ***Practica 4***: *Estructuras de datos dinámicas*
 
 ## ***Objetivos de la practica:***
 Comprender el uso de las estructuras dinamicas utilizando las funciones malloc, calloc y realloc. Estructuras dinamicas como listas enlazadas o arreglos dinamicos.

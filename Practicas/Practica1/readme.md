@@ -1,6 +1,4 @@
-# ***Practica 1***: 
-## *Tipos de datos simples y estructuras de control. Funciones – Identificadores*
-___
+# ***Practica 1***: *Tipos de datos simples y estructuras de control. Funciones – Identificadores*
 
 ## ***Objetivos de la practica:***
 Introducir al alumno al lenguaje de programacion C. Entender el funcionamiento del manejo de los tipos de datos y estructuras de control mas elementales de la programacion en C. Comprender la utilizacion de funciones y sus parametros.

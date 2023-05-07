@@ -1,6 +1,4 @@
-# ***Practica 5***: 
-## *Archivos de texto y archivos binarios*
-___
+# ***Practica 5***: *Archivos de texto y archivos binarios*
 
 ## ***Objetivos de la practica:***
 Comprender el manejo de archivos de texto y archivos binarios
