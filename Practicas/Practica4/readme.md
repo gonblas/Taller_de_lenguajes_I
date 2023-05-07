@@ -43,9 +43,7 @@ void f (int * p) {
 
 > **Nota:** modularice la reserva de memoria, la inicialización y el cálculo del máximo.
 
-
 **5.** *Escriba un programa que reserve en forma dinámica un arreglo de 100 caracteres. A continuación, lea 10 oraciones utilizando la función gets e informe para cada una de ellas la cantidad de letras minúsculas y de letras mayúsculas que la componen. Utilice el arreglo creado como variable temporal para procesar cada oración. Por último, libere la memoria reservada dinámicamente.*
-
 
 **6.** *Defina la estructura de una lista enlazada de enteros. Implemente las siguientes funciones:*
 
@@ -68,8 +66,6 @@ void f (int * p) {
 ___
 
 ### ***Reserva dinámica de memoria***
-
-
 
 **9.** *Dado los siguientes programas, analice y responda las preguntas.*
 

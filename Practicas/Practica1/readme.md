@@ -72,7 +72,7 @@ int main(){
 
 **6.** *Escriba un programa que, a partir de un número flotante leído desde teclado, el cual representa una distancia en kilómetros, imprima su equivalente en millas.*
 
-**Nota: 1,61 Km ≈ 1 milla.**
+> **Nota:** 1,61 Km ≈ 1 milla.
 
 **7.** *El objetivo del siguiente código es leer dos caracteres de teclado e imprimirlos en pantalla. ¿El código cumple con su cometido? En caso negativo, corríjalo para que lo haga.*
 
@@ -166,7 +166,7 @@ for (i = 11; i > 1; i=+1)
 
 **12.**  *Escriba un programa que imprima la raíz cuadrada, el cuadrado y el cubo de los números enteros comprendidos en el rango 1..10.*
 
-> **Nota:** *para calcular la raíz cuadrada y la potencia de un número investigue las funciones sqrt() y pow(), ambas de la librería <math.h>*
+> **Nota:** para calcular la raíz cuadrada y la potencia de un número investigue las funciones sqrt() y pow(), ambas de la librería <math.h>
 
 **13.** *Un número primo es un número natural mayor que 1, que tiene dos divisores distintos únicamente: él mismo y el 1.*
 
@@ -222,7 +222,7 @@ void swap(int a, int b)
 |:-----:|:-:|:-:|:-:|:-:|:-:|
 | Nota  | A | B | C | D | E |
 
-> **Nota:** *para asegurar que un número se encuentre en el rango de 0 a N, puede utilizar el operador % con (N+1) como segundo operando.*
+> **Nota:** para asegurar que un número se encuentre en el rango de 0 a N, puede utilizar el operador % con (N+1) como segundo operando.
 
 **20.**  *Desarrolle una función llamada damePar(), la cual debe retornar un número entero. damePar()devuelve 0 en el primer llamado, 2 en el segundo, 4 en el tercero, y así sucesivamente. Luego, escriba un programa que lea un número entero positivo n desde teclado y utilizando damePar() imprima los primeros n números pares. No utilice variables globales.*
 

@@ -22,7 +22,7 @@ ___
 
 **3.** *Sea A una matriz con m filas y n columnas y c un número. La multiplicación de una matriz A por un escalar c está dada por multiplicar cada entrada de A por c:*
 
-$${A'_{ij}=c\cdot A_{ij}}$$
+$${A'_{ij} = c\cdot A_{ij}}$$
 
 
 *Por ejemplo:*
@@ -98,7 +98,7 @@ $$
 
 **7.** *Se dispone de un arreglo con información de las precipitaciones de todos los días de todos los meses de los últimos 10 años. Se desea conocer para cada año el mes en que menos llovió y también cual es el año que tuvo menor precipitación promedio.*
 
-> **Nota:** *por simplicidad asuma que todos los meses tienen 30 días.*
+> **Nota:** por simplicidad asuma que todos los meses tienen 30 días.
 ___
 
 ### ***Punteros***
@@ -126,7 +126,7 @@ ___
 | c = \*p2 + \*p1;   |     |     |     |     |     |
 | a = \*p1 = ++\*p2; |     |     |     |     |     |
 
-> **Nota:** *### se utiliza para indicar que la variable no ha sido inicializada aún.*
+> **Nota:** ### se utiliza para indicar que la variable no ha sido inicializada aún.
 
 **3.** *Analice y ejecute el siguiente código.*
 
@@ -186,7 +186,7 @@ $$
 \end{bmatrix}
 $$
 
-> **Nota:** *utilice la función swap definida en la Práctica 1.*
+> **Nota:** utilice la función swap definida en la Práctica 1.
 ___
 
 ### ***Strings (Vectores de Caracteres)***
@@ -201,11 +201,11 @@ ___
 
 **5.**  *La función strcpy recibe dos punteros a cadenas de caracteres y copia la cadena apuntada por el segundo (incluyendo el carácter nulo) en la cadena apuntada por el primero. Además, la función retorna el primer puntero. Implemente su propia versión de la función strcpy.*
 
-> **Nota:** *asuma que la primera cadena de caracteres tiene espacio suficiente para almacenar a la segunda.*
+> **Nota:** asuma que la primera cadena de caracteres tiene espacio suficiente para almacenar a la segunda.
 
 **6.**  *Escriba un programa que lea una palabra desde teclado y luego informe la cantidad de veces que aparece cada letra de la palabra leída en ella misma.*
 
-> **Nota:** *asuma que la palabra está formada sólo por letras minúsculas.*
+> **Nota:** asuma que la palabra está formada sólo por letras minúsculas.
 
 **7.**  *Escriba una función que reciba un puntero a una secuencia de caracteres y que retorne 1 en caso de que la palabra contenida sea palíndroma o 0 en caso contrario.*
 
@@ -213,7 +213,7 @@ ___
 
 **b.** *Utilizando punteros.*
 
-> **Nota:** *una palabra palíndroma es aquella que se lee igual hacia izquierda a derecha que de derecha a izquierda. Por ejemplo: arenera, radar, reconocer, rotor, salas, seres, sometemos.*
+> **Nota:** una palabra palíndroma es aquella que se lee igual hacia izquierda a derecha que de derecha a izquierda. Por ejemplo: arenera, radar, reconocer, rotor, salas, seres, sometemos.
 ___
 ## ***Ejercicios Adicionales***
 **1.**  *Realice un programa que inicialice un vector con números al azar, imprima sus valores, los ordene y los vuelva a imprimir. Modularice con una función de inicialización, una función para ordenación y una función de impresión.*
@@ -302,8 +302,7 @@ void opcion8(int *datos){
 **d.** *numToText que recibe como parámetros un entero (del 0 a 99) y una cadena y retorna la cadena modificada con la representación del número en texto. Ejemplo para el número 35 la cadena de caracteres deberá quedar con “treinta y cinco”.*
 
 > **Notas:** 
-
-- *Recuerde que la diferencia entre los códigos ascii de una letra minúscula y mayúscula es de un bit (el bit 5 está en 1 para las minúsculas y en 0 para las mayúsculas).*
-- *Recuerde agregar el terminador de cadenas en el ítem c.*
-- *Uno o más arreglos de punteros a char podría ser una estructura útil para resolver el ítem d.Podría comenzar por resolver los números de 0 a 5, luego de 0 a 20 y finalmente los de 0 a 99.*
+> - *Recuerde que la diferencia entre los códigos ascii de una letra minúscula y mayúscula es de un bit (el bit 5 está en 1 para las minúsculas y en 0 para las mayúsculas).*
+> - *Recuerde agregar el terminador de cadenas en el ítem c.*
+> - *Uno o más arreglos de punteros a char podría ser una estructura útil para resolver el ítem d.Podría comenzar por resolver los números de 0 a 5, luego de 0 a 20 y finalmente los de 0 a 99.*
 ___

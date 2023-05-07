@@ -67,7 +67,7 @@ typedef struct persona {
 
 **c.** *Imprimir una carta (número/figura con su palo).*
 
-> **Nota:** *utilice constantes (define o const) para definir los palos de las cartas, modelice las cartas y el mazo.*
+> **Nota:** utilice constantes (define o const) para definir los palos de las cartas, modelice las cartas y el mazo.
 
 ___
 ### ***Uniones***
@@ -106,7 +106,7 @@ typedef enum { LETRA_A = 'A', LETRA_B, LETRA_Z = 'Z' } Letras2;
 
 **b.** *Realice dos implementaciones diferentes de una función que imprima el texto asociado a un día de la semana del enumerativo.*
 
-> **Nota:** *si bien una función para la impresión no es necesaria, favorece la reutilización, encapsulamiento, validación del rango del dato y minimiza la posibilidad de errores futuros*
+> **Nota:** si bien una función para la impresión no es necesaria, favorece la reutilización, encapsulamiento, validación del rango del dato y minimiza la posibilidad de errores futuros
 
 
 **10.** *Un teléfono móvil tiene varios bits de configuración que permite controlar el encendido y apagado de dispositivos con el objetivo, generalmente, de ahorrar energía. Cada bit se asocia a un módulo diferente donde un 1 significa encendido y un 0 apagado. Comenzando desde el bit más significativo, la descripción de estos bits es la siguiente: Bluetooth Wifi, GPS, Datos, Cámara Frontal, Cámara Trasera, Linterna y Vibrar.*

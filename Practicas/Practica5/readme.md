@@ -35,7 +35,7 @@ int main(){
 
 *¿El código funciona correctamente? Si no es así, corríjalo para que lo haga.*
 
-> **Nota:** Preste atención al formato del archivo. La función fgets() procesa hasta encontrar un salto de línea (el cual es retenido). Si luego del último renglón no hubiese un salto de línea, el archivo no tendría un formato válido para procesar.
+> **Nota:** preste atención al formato del archivo. La función fgets() procesa hasta encontrar un salto de línea (el cual es retenido). Si luego del último renglón no hubiese un salto de línea, el archivo no tendría un formato válido para procesar.
 
 **2.** *Escriba un programa que copie el contenido de un archivo de texto en otro nuevo.*
 
