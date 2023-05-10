@@ -4,11 +4,10 @@
 
 #define BOMBA 'X'
 #define OCULTA '?'
-#define NO_MARCADA '-'
+#define NO_MARCADA ' '
 #define SIZE 8
-#define MINAS 1
+#define MINAS 10
 #define TAM_LETRA 3 //tamaño de cada letra en la impresion
-#define CERO ' '
 
 typedef struct{
     char visibilidad;
@@ -23,7 +22,6 @@ void print_tablero(Casilla *T, int len);
 void showNear(Casilla T[], int x, int y, int *jugadas);
 
 int main(){
-    srand(time(NULL));
     Casilla *T = (Casilla *)malloc(sizeof(Casilla) * SIZE * SIZE);
     char rta[5];
     int flag = 1, fila, bombas = 0, jugadas = SIZE * SIZE - MINAS;
@@ -44,7 +42,7 @@ int main(){
                     T[fila * SIZE + (col - 'A')].visibilidad = 1;
                 }
                 else{
-                    if(T[fila * SIZE + (col - 'A')].marca == CERO)
+                    if(T[fila * SIZE + (col - 'A')].marca == '0')
                         showNear(T, fila, col -'A', &jugadas);
                     else{
                         jugadas--;
@@ -100,9 +98,7 @@ void generar(Casilla *T, int cant, int len){
         {
             if(T[i*len+j].marca != BOMBA){
                 T[i * len + j].bombas = getMinas(T, len,i, j);
-                if (T[i * len + j].bombas == 0)
-                  T[i * len + j].marca = CERO;
-                else T[i * len + j].marca = T[i * len + j].bombas + '0';
+                T[i * len + j].marca = T[i * len + j].bombas + '0';
             }
             T[i * len + j].ocultar = 0;
             T[i * len + j].visibilidad = 0;

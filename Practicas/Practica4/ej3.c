@@ -2,16 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
-void reserva(int* * p, int n);
+int* reserva(int n);
 void carga(int * p, int n);
 int calculo(int p[], int len);
 
 int main(){
-    srand(time(NULL));
-    int n, *p;
+    //srand(time(NULL));
+    int n;
     printf("Ingrese la cantidad de numeros a leer: ");
     scanf("%d",&n);
-    reserva(&p, n);
+    int *p = reserva(n);
+    if(p == NULL)
+        return -1;
     carga(p, n);
     printf("El maximo es %d.\n", calculo(p, n));
     free(p);
@@ -19,8 +21,8 @@ int main(){
     return 0;
 }
 
-void reserva(int* * p, int n){
-    *p = (int*) malloc(sizeof(int)*n);
+int* reserva(int n){
+    return (int*) malloc(sizeof(int)*n);
 }
 
 void carga(int * p, int n){

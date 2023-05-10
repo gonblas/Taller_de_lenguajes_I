@@ -7,8 +7,8 @@ typedef struct nodo
     struct nodo *next;
 } List;
 
-void inicializar(List* l, int data);
-void eliminarLista(List** l);
+List *inicializar();
+void eliminarLista(List **l);
 void agregarInicio(List** l, int data);
 void agregarFinal(List** l, int data);
 int length(List* l);
@@ -37,10 +37,12 @@ int main()
     return 0;
 }
 
-void inicializar(List* l, int data){
-    l->data = data;
+List* inicializar(){
+    List *l = malloc(sizeof(List));
     l->next = NULL;
+    return l;
 }
+
 
 void eliminarLista(List** l){
     List* act = *l;

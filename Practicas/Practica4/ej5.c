@@ -9,6 +9,8 @@ void MinMayus(char* c);
 int main(){
 
     char* cadena = (char*) malloc(sizeof(char)*SIZE);
+    if(cadena == NULL)
+        return -1;
     for (int i = 0; i < ORACIONES; i++)
     {
         printf("Ingrese una oracion: ");

@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void reserva(float* * p, int n);
+float* reserva(int n);
 void carga(float * p, int n);
 float promedio(float p[], int len);
 
 int main(){
     int n;
-    float *p;
     printf("Ingrese la cantidad de numeros a leer: ");
-    scanf("%d",&n);
-    reserva(&p, n);
+    float *p = reserva(n);
+    if(p == NULL)
+        return -1;
+    scanf("%d", &n);
     carga(p, n);
     
     printf("El promedio es %f.\n", promedio(p, n));
@@ -19,8 +20,8 @@ int main(){
     return 0;
 }
 
-void reserva(float* * p, int n){
-    *p = (float*) malloc(sizeof(float)*n);
+float* reserva(int n){
+    return (float*) malloc(sizeof(float)*n);
 }
 
 void carga(float * p, int n){
