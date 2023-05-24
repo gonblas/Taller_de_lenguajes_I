@@ -79,6 +79,5 @@ bool searchWord(const Dict D, const char* word) {
         else
             right = mid - 1;
     }
-
     return false;
 }
