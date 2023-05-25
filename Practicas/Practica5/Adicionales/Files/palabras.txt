@@ -1,4 +1,3 @@
-año
 ave
 bus
 dia
@@ -540,7 +539,6 @@ esmalte
 Espacio
 Espacio
 espalda
-español
 especie
 estudio
 extasis
