@@ -139,7 +139,13 @@ ___
 
 **1.**  *Dado un archivo de texto que contiene una palabra por cada línea, implemente un programa que lo convierta a su correspondiente versión binaria agregando un valor de dificultad asociado a la frecuencia de sus letras. Dicho valor de dificultad de una palabra esta dado por la suma de los cuadrados de la frecuencia (ver tabla) de cada una de las letras que la compone. Solo agregue aquellas palabras que tengan entre 4 y 14 letras.*
 
-[![tabla.png](https://i.postimg.cc/vZrwHHHX/tabla.png)](https://postimg.cc/4YxSWGch)
+|   A   |  B   |  C   |  D   |   E   |  F   |  G   |  H   |  I   |  J   |  K   |  L   |  M   |
+| :---: | :--: | :--: | :--: | :---: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 12,53 | 1,42 | 4,68 | 5,86 | 13,68 | 0,69 | 1,01 | 0,70 | 6,25 | 0,44 | 0,01 | 4,97 | 3,15 |
+
+|  N   |  Ñ   |  O   |  P   |  Q   |  R   |  S   |  T   |  U   |  V   |  W   |  X   |  Y   |  Z   |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 6,71 | 0,31 | 8,68 | 2,51 | 0,88 | 6,87 | 7,98 | 4,63 | 3,93 | 0,90 | 0,02 | 0,22 | 0,90 | 0,52 |
 
 > **Nota:**
 > - Tenga en cuenta que como va a trabajar en C con texto en formato ASCII extendido (y normalmente los
