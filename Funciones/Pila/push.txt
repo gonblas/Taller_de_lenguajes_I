@@ -9,6 +9,6 @@ void push(int element) {
     Stack* newNode = (Stack*) malloc(sizeof(Stack));
     newNode->data = element;
 
-    newNode->next = top;
     top = newNode;
+    newNode->next = top;
 }

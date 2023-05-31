@@ -27,6 +27,7 @@
     "chrono": "c",
     "limits": "c",
     "algorithm": "c",
-    "cstdlib": "c"
+    "cstdlib": "c",
+    "stdlib.h": "c"
   }
 }
